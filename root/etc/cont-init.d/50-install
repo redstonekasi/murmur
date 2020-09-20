@@ -1,0 +1,7 @@
+#!/usr/bin/with-contenv bash
+
+# copy config
+if [ ! -f "/config/murmur.ini" ]; then
+  cp /defaults/murmur.ini /config/murmur.ini
+  chown abc:abc /config/murmur.ini
+fi
